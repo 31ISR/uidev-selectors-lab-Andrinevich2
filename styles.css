@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
   margin: 0;
   padding: 0;
@@ -6,43 +5,216 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
   color: #333;
-  background-color: #f9f9f9;
+
 }
 
-/* Шапка */
-.page-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba1 100%);
-  color: white;
-  text-align: center;
-  padding: 2rem 0;
-  margin-bottom: 2rem;
-}
-
-.page-title {
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin: 0;
-}
-
-/* Основной контент */
-.main-content {
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .section-title {
   text-align: center;
+
   margin-bottom: 2rem;
   font-size: 2rem;
   color: #2c3e50;
 }
 
-/* Секция «О компании» */
-.about-text {
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #ffb700;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #faa300;
+}
+
+.header {
+  background-color: #2c3e50;
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.menu a:hover,
+.menu a:focus {
+  opacity: 0.7;
+}
+
+.hero-section {
+  background-color: #2c3e50;
+  color: #fff;
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.about-section img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.services-section .tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: #fafafa;
+}
+
+.tab-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: inherit;
+  cursor: pointer;
+  color: #2c3e50;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-btn.active,
+.tab-btn:hover,
+.tab-btn:focus {
+  background-color: #f0f0f0;
+}
+
+.portfolio-section .works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.work-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.25em 0.5em;
+  background-color: #ffb700;
+  color: white;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.work-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.work-item:hover::before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.reviews-section blockquote {
+  font-style: italic;
   font-size: 1.1rem;
-  max
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.reviews-section footer {
+  text-align: right;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.contacts-section address {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.contacts-section input,
+.contacts-section textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-section form > * {
+    margin-bottom: 0.5rem;
+  }
+}

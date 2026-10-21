@@ -1,119 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Разработка цифровых решений для бизнеса</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="page-header">
-    <h1 class="page-title">Разработка цифровых решений для бизнеса</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebAgency</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">WebAgency</a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#about-us">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main class="main-content">
-    <section class="about-section">
-      <h2 class="section-title">О компании</h2>
-      <p class="about-text">Мы создаём современные веб‑приложения, мобильные платформы и системы автоматизации, помогая компаниям повышать эффективность и масштабируемость.</p>
+    <section id="hero" class="hero-section">
+      <h1 class="hero-title">Создаем современные и удобные сайты</h1>
+      <p class="hero-subtitle">Профессиональная веб-разработка для вашего бизнеса</p>
+      <button class="btn btn-primary">Заказать сайт</button>
     </section>
 
-    <section class="services-section">
-      <h2 class="section-title">Наши услуги</h2>
-
-      <article class="service-card">
-        <header class="service-header">
-          <h3 class="service-title">Веб‑разработка</h3>
-        </header>
-        <p class="service-description">Мы предлагаем комплексные решения для создания веб‑приложений любой сложности. Наши специалисты используют современные технологии и адаптивные методологии разработки. Наша цель — обеспечить удобство и безопасность ваших цифровых решений.</p>
-        <h4 class="service-subtitle">Ключевые направления:</h4>
-        <ul class="service-list">
-          <li class="service-item">Разработка корпоративных сайтов и интернет‑магазинов</li>
-          <li class="service-item">Интеграция с CRM и ERP‑системами</li>
-          <li class="service-item">UI/UX‑дизайн и пользовательские интерфейсы</li>
-        </ul>
-      </article>
-
-      <article class="service-card">
-        <header class="service-header">
-          <h3 class="service-title">Мобильные приложения</h3>
-        </header>
-        <p class="service-description">Мобильные технологии — это ключ к удобству пользователей и расширению бизнеса. Мы разрабатываем качественные и функциональные мобильные приложения под iOS и Android.</p>
-        <h4 class="service-subtitle">Наши преимущества:</h4>
-        <ul class="service-list">
-          <li class="service-item">Интуитивно понятный дизайн</li>
-          <li class="service-item">Высокая производительность приложений</li>
-          <li class="service-item">Гибкость и масштабируемость решений</li>
-        </ul>
-      </article>
-
-      <article class="service-card">
-        <header class="service-header">
-          <h3 class="service-title">Автоматизация бизнеса</h3>
-        </header>
-        <p class="service-description">Мы помогаем бизнесу автоматизировать ключевые процессы, экономя время и ресурсы.</p>
-        <h4 class="service-subtitle">Возможности автоматизации:</h4>
-        <ul class="service-list">
-          <li class="service-item">Разработка кастомных ERP‑систем</li>
-          <li class="service-item">Внедрение чат‑ботов и голосовых помощников</li>
-          <li class="service-item">Оптимизация бизнес‑процессов</li>
-        </ul>
-      </article>
+    <section id="about-us" class="about-section">
+      <div class="container">
+        <h2 class="section-title">О нас</h2>
+        <p class="about-text">Мы — команда профессионалов, разрабатывающая стильные и функциональные сайты.</p>
+        <img alt="Команда разработчиков" width="600" id="01a15d6b-97a7-7790-8511-83343f436561"/>
+      </div>
     </section>
 
-    <section class="why-choose-section">
-      <h2 class="section-title">Почему выбирают нас</h2>
-      <p class="why-text">Мы следуем современным стандартам разработки, уделяем внимание деталям и предлагаем индивидуальный подход к каждому проекту.</p>
-      <ul class="why-list">
-        <li class="why-item">10 лет опыта в сфере IT</li>
-        <li class="why-item">300 успешных проектов</li>
-        <li class="why-item">Передовые технологии и аналитический подход</li>
-        <li class="why-item">Гибкость и адаптация под задачи клиента</li>
-      </ul>
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="tabs">
+          <button class="tab-btn active">Дизайн и разработка</button>
+          <button class="tab-btn">SEO-оптимизация</button>
+          <button class="tab-btn">Поддержка и обслуживание</button>
+          <button class="tab-btn">Аналитика и маркетинг</button>
+        </div>
+      </div>
     </section>
 
-    <section class="reviews-section">
-      <h2 class="section-title">Отзывы клиентов</h2>
-      <blockquote class="review-item">
-        <p class="review-text">«Команда быстро поняла наши задачи и предложила оптимальное решение. Итог — удобный и стильный сайт, который приносит новых клиентов.»</p>
-        <footer class="review-author">— Алексей Иванов, CEO TechCorp</footer>
-      </blockquote>
-      <blockquote class="review-item">
-        <p class="review-text">«Мы искали подрядчика для мобильного приложения и не ошиблись с выбором. Профессиональный подход, быстрая обратная связь и отличное качество.»</p>
-        <footer class="review-author">— Екатерина Смирнова, директор маркетинга SoftSolutions</footer>
-      </blockquote>
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-title">Наши работы</h2>
+        <div class="works-grid">
+          <figure class="work-item">
+            <span class="label">web</span>
+            <img src="assets/work1.png" alt="Работа 1" loading="lazy"/>
+          </figure>
+          <figure class="work-item">
+            <span class="label">web</span>
+            <img src="assets/work2.png" alt="Работа 2" loading="lazy"/>
+          </figure>
+          <figure class="work-item">
+            <span class="label">web</span>
+            <img alt="Работа 3" loading="lazy" id="01a15d6b-b308-7b72-9c9e-0920833edd29"/>
+          </figure>
+        </div>
+      </div>
     </section>
 
-    <section class="cases-section">
-      <h2 class="section-title">Наши кейсы</h2>
-
-      <article class="case-card">
-        <h3 class="case-title">Разработка интернет‑магазина для бренда одежды</h3>
-        <p class="case-client"><strong>Клиент:</strong> FashionTrend</p>
-        <p class="case-task"><strong>Задача:</strong> Создать современный интернет‑магазин с удобной системой управления товарами и интеграцией с платёжными сервисами.</p>
-        <p class="case-solution"><strong>Решение:</strong> Разработана адаптивная платформа с удобной навигацией, интеграция с популярными платёжными системами, автоматизированная система учёта заказов и доставки.</p>
-        <p class="case-result"><strong>Результат:</strong> Увеличение онлайн‑продаж на 40 % за первые 3 месяца.</p>
-      </article>
-
-      <article class="case-card">
-        <h3 class="case-title">Разработка мобильного приложения для сети ресторанов</h3>
-        <p class="case-client"><strong>Клиент:</strong> FoodExpress</p>
-        <p class="case-task"><strong>Задача:</strong> Разработать мобильное приложение для удобного заказа блюд и программы лояльности.</p>
-        <p class="case-solution"><strong>Решение:</strong> Простое и удобное мобильное приложение с возможностью онлайн‑заказа, интеграция с CRM для персонализации предложений, система бонусов и скидок для клиентов.</p>
-        <p class="case-result"><strong>Результат:</strong> Прирост числа заказов через приложение на 60 %.</p>
-      </article>
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <blockquote>
+          «Отличная работа! Сайт собрали быстро и качественно.»
+          <footer>— Илал Петер, CEO</footer>
+        </blockquote>
+      </div>
     </section>
-  </main>
-
-  <footer class="page-footer">
-    <section class="contact-section">
-      <h2 class="contact-title">Контакты</h2>
-      <address class="contact-info">
-        <p class="contact-address">Адрес: г. Москва, ул. Программная, д. 15, офис 304</p>
-        <p class="contact-phone">Телефон: +7 (495) 123‑45‑67</p>
-        <p class="contact-email">Email: <a href="mailto:contact@digitaldev.ru" class="email-link">contact@digitaldev.ru</a></p>
-      </address>
+    <section id="contacts" class="contacts-section">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <address>
+          Email: contact@webagency.com<br/>
+          Телефон: +7 999 123 45 67
+        </address>
+        <form action="#">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Ваша почта" required>
+          <textarea placeholder="Ваше сообщение"></textarea>
+          <button class="btn btn-primary">Отправить</button>
+        </form>
+      </div>
     </section>
-    <p class="copyright">&copy; 2025</p>
-  </footer>
-</body>
+
+    <footer class="footer">
+      <div class="container">
+        &copy; WebAgency. Все права защищены.
+      </div>
+    </footer>
+  </body>
 </html>
